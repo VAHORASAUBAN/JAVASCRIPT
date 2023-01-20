@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+		function continuetime() {
+			setInterval(datejust,1000);
+		}
+		function datejust() {
+		var d = Date();
+		// var x = d.toLocaleDate();
+			document.getElementById('dateinfo').innerHTML = d;
+		}
+	</script>
+</head>
+<body onload="continuetime()">
+	<p id="dateinfo"/>
+</body>
+</html>

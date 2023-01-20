@@ -1,0 +1,44 @@
+<html>
+  <head>
+     <script>
+     function calculate() {
+
+        
+      num1= parseInt(document.getElementById('num1').value);
+      num2=parseInt(document.getElementById('num2').value);
+       ans= parseInt(num1+num2);
+        document.getElementById('ans').value=ans;
+
+
+
+     }
+      function cal() {
+
+        
+      num1= parseInt(document.getElementById('num1').value);
+      num2=parseInt(document.getElementById('num2').value);
+        ans1=parseInt(num1-num2);
+        document.getElementById('ans1').value=ans1;
+
+
+
+     }
+ 
+</script>
+  </head>
+  
+  <body>
+ 
+
+<form name="calc">
+
+  number 1: <input id="num1" type="text" lable="num1"><br/>
+  number 2: <input id="num2" type="text" lable="num2"><br/>
+  result: <input id="ans" type="text" lable="result"><br/>
+  <input type="button" lable="add" value="add" onclick="calculate()"/>
+  <input type="button" lable="sub" value="sub" onclick="cal()"/>
+
+
+</form>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+		function event_focus(x) {
+			x.style.color = "yellow";
+	x.style.backgroundColor = "black";
+
+		}
+		function event_blur(x) {
+	x.style.color="blue";
+	x.style.backgroundColor="green";
+
+		}
+	</script>
+</head>
+<body>
+	<input type="text" onfocus="event_focus(this)" onblur="event_blur(this)">
+</body>
+</html>
