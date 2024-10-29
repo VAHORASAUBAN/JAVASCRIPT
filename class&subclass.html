@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CLASS and SUBCLASS</title>
+</head>
+<body>
+	<script type="text/javascript">
+		class Holiday {
+			constructor(destination,duration){
+				this.destination=destination;
+				this.duration=duration;
+			}
+			info()
+			{
+				console.log(`${this.destination} will take ${5} days.`);
+			}
+		}
+
+		class trip extends Holiday{
+			constructor(destination,duration,gear){
+				super(destination,duration);
+				this.gear=gear;
+			}
+			info(){
+				super.info();
+				console.log(`bring along your ${this.gear.join(' and your ')}`)
+			}
+		}
+		var TripWithGear = new trip('Everest', 5, ['sunglasses', 'Socks'])
+		TripWithGear.info();
+	</script>
+</body>
+</html>
